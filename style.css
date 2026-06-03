@@ -449,17 +449,18 @@ body {
 
 
 .basket_container_1 {
-    width: 335px;
+    
     background-color:rgb(220, 214, 208);
-    border-radius: 12px;
+    border-radius: 20px;
     position: fixed;
     right: 0;
     top: 0;
     height:100%;
-    width: 440px;
+    width: 380px;
     z-index: 2000;
     padding: 30px 20px;
     box-sizing: border-box;
+    padding-top: 10px;
     color: #efe8e8;
 
     box-shadow: -4px 0 10px rgba(0, 0, 0, 0.1);

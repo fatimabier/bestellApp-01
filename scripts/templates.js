@@ -31,17 +31,4 @@ function getDishHTML(dish, myClass, priceFormatted) {
         '</div>';
 }
 
-function getEmptyBasketTemplate() {
-    return '<div class="basket_empty_state">' +
-        '<img src="assets/icons/shopping_cart.png" alt="Empty" style="opacity: 0.3; height: 40px; margin-bottom: 15px;">' +
-        '<h3>Wähle dein Festmahl</h3>' +
-        '<p> Erstelle deinen persönlichen Wunschkorb und bestelle dein Essen mit nur wenigen Klicks.</p>' +
-        '</div>';
-}
 
-function getSuccessBasketTemplate() {
-    return '<div class="basket_success_state">' +
-        '<h3>Vielen Dank für deine Bestellung!</h3>' +
-        '<p>.</p>' +
-        '</div>';
-}

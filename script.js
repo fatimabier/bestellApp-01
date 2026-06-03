@@ -23,7 +23,6 @@ function fillMenuCategories(burgerRef, pizzaRef, saladRef) {
         let myClass = getCardClass(i);
         let priceFormatted = dishes[i].preis.toFixed(2).replace('.', ',') + '€';
         let card = getDishHTML(dishes[i], myClass, priceFormatted);
-
         if (dishes[i].category == 'burger') burgerRef.innerHTML += card;
         if (dishes[i].category == 'pizza') pizzaRef.innerHTML += card;
         if (dishes[i].category == 'salad') saladRef.innerHTML += card;
@@ -48,7 +47,6 @@ function getCardClass(index) {
 
 function addToBasket(name, price) {
     let found = checkBasketForDish(name);
-
     if (found == false) {
         basket.push({
             name: name,
@@ -141,14 +139,6 @@ function addAmount(index) {
     renderBasket();
 }
 
-function toggleBasket() {
-    let basketContainer = document.getElementById('basket_container_1');
-    
 
-    basketContainer.classList.toggle('show_basket');
-    document.body.classList.toggle('no_scroll');
-
-  
-}
 
 
